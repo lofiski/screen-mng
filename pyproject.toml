@@ -1,0 +1,21 @@
+[project]
+name = "screen-mng"
+version = "0.1.0"
+description = "极简 Windows 10/11 桌面布局管理：指定程序在指定显示器的指定区域打开"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+screen-mng = "screen_mng.cli:main"
+
+[project.gui-scripts]
+screen-mng-gui = "screen_mng.gui:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest", "pyinstaller"]
